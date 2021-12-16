@@ -53,7 +53,7 @@ class ControllerExtensionPaymentUniversalpay extends Controller {
 			$post_data['customerAddressCity'] = html_entity_decode($order_info['payment_city'], ENT_QUOTES, 'UTF-8');
 			$post_data['customerAddressPostalCode'] = html_entity_decode($order_info['payment_postcode'], ENT_QUOTES, 'UTF-8');
 			$post_data['customerAddressCountry'] = html_entity_decode($order_info['payment_iso_code_2'], ENT_QUOTES, 'UTF-8');
-			$post_data['customerAddressState'] = html_entity_decode($order_info['payment_zone'], ENT_QUOTES, 'UTF-8');
+//			$post_data['customerAddressState'] = html_entity_decode($order_info['payment_zone'], ENT_QUOTES, 'UTF-8');
 			$post_data['customerAddressPhone'] = html_entity_decode($order_info['telephone'], ENT_QUOTES, 'UTF-8');
 			$post_data['merchantChallengeInd'] = '01';
 			$post_data['merchantDecReqInd'] = 'N';
